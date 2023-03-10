@@ -65,7 +65,6 @@ public class ExcelReader {
                         }
                 }
             }
-            System.out.println("------------------------------------------------");
 
             workbook.close();
             inputStream.close();

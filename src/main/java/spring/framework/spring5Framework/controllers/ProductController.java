@@ -32,7 +32,6 @@ public class ProductController {
         String message;
         try{
             productService.upload(file);
-            System.out.println("Uploaded...");
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
         }catch (Exception e){
